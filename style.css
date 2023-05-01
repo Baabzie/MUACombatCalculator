@@ -1,0 +1,131 @@
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1, header h2 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  height: 25px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 1px 1px 1px black;
+}
+
+input {
+  height: 25px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.add-player-div {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  align-items: center;
+}
+
+.players-div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.player-div {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+}
+.player-div .character-name-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player-div .character-name-div h2 {
+  margin: 0;
+}
+.player-div .character-name-div button {
+  background-color: red;
+}
+.player-div .attack-roll-div, .player-div .enemy-defense-roll-div, .player-div .weapon-roll-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 0;
+}
+.player-div .attack-roll-div h3, .player-div .enemy-defense-roll-div h3, .player-div .weapon-roll-div h3 {
+  text-align: center;
+  margin: 0px;
+}
+.player-div .attack-roll-div input, .player-div .enemy-defense-roll-div input, .player-div .weapon-roll-div input {
+  height: 25px;
+  width: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+.player-div .attack-roll-div p, .player-div .enemy-defense-roll-div p, .player-div .weapon-roll-div p {
+  margin: 0;
+}
+.player-div .attack-roll-div .dice-skill-div, .player-div .attack-roll-div .enemy-dice-skill-div, .player-div .attack-roll-div .weapon-dice-div, .player-div .enemy-defense-roll-div .dice-skill-div, .player-div .enemy-defense-roll-div .enemy-dice-skill-div, .player-div .enemy-defense-roll-div .weapon-dice-div, .player-div .weapon-roll-div .dice-skill-div, .player-div .weapon-roll-div .enemy-dice-skill-div, .player-div .weapon-roll-div .weapon-dice-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.player-div .attack-roll-div .relevant-skill-div, .player-div .attack-roll-div .enemy-relevant-skill-div, .player-div .enemy-defense-roll-div .relevant-skill-div, .player-div .enemy-defense-roll-div .enemy-relevant-skill-div, .player-div .weapon-roll-div .relevant-skill-div, .player-div .weapon-roll-div .enemy-relevant-skill-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.player-div .attack-roll-div .modifier-div, .player-div .attack-roll-div .enemy-modifier-div, .player-div .enemy-defense-roll-div .modifier-div, .player-div .enemy-defense-roll-div .enemy-modifier-div, .player-div .weapon-roll-div .modifier-div, .player-div .weapon-roll-div .enemy-modifier-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.player-div .attack-roll-div .enemy-name, .player-div .attack-roll-div .weapon-name, .player-div .enemy-defense-roll-div .enemy-name, .player-div .enemy-defense-roll-div .weapon-name, .player-div .weapon-roll-div .enemy-name, .player-div .weapon-roll-div .weapon-name {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.output-div {
+  margin-top: 10px;
+  height: 225px;
+  width: 230px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.output-div p {
+  text-align: center;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
